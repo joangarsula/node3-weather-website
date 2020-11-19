@@ -30,15 +30,15 @@ app.get("", (req, res) => {
   });
 });
 
-app.get("/About", (req, res) => {
-  res.render("About", {
+app.get("/about", (req, res) => {
+  res.render("about", {
     title: "About Me",
     name: "Joan",
   });
 });
 
-app.get("/Help", (req, res) => {
-  res.render("Help", {
+app.get("/help", (req, res) => {
+  res.render("help", {
     helpText: "This is some helpful text.",
     title: "Help",
     name: "Joan",
