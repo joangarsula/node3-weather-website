@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 
 //Define paths for Express Config
 const publicDirectoryPath = path.join(__dirname, "../public");
-const viewsPath = path.join(__dirname, "../templates/views");
+const viewsPath = path.join(__dirname, "../public/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
 
 //Setup handlebars engine and views location
@@ -103,7 +103,7 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("Server is up on port" + port);
+  console.log("Server is up on port " + port);
 });
 
 // app.get("", (req, res) => {
